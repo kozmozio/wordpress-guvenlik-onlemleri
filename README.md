@@ -53,8 +53,8 @@
         * Javascript kaynak dosyaları .min versiyonu kullanılmalı.
         * Console.log kapalı olmalı.
         * wp-config.php 
-        * SALT key ler güncellenmeli. [https://api.wordpress.org/secret-key/1.1/salt/](https://api.wordpress.org/secret-key/1.1/salt/)
-        * Loglama aktif ve görünmez olmalı
+        * SALT key ler güncellenmeli. [SALT Generator](https://api.wordpress.org/secret-key/1.1/salt/)
+        * Loglama aktif ve görünmez olmalı, log dizinleri publicê kapalı olmalı.
         * **wp-config.php ye ekle**
 
 
@@ -92,13 +92,20 @@
     * Tüm pluginler son sürümünde olmalı
     * Wordpress.org tan indirilmiş veya lisans ile geliştirici sitesinden indirilmiş olmalı.
     * **Tavsiye edilen pluginler**
-        * Wp All In One Security 
-        * Disable REST API 
-        * Safe SVG 
-        * SameSite
-        * Clean Image Filenames
+        * [All In One WP Security](https://wordpress.org/plugins/all-in-one-wp-security-and-firewall/)
+        * [Disable REST API](https://wordpress.org/plugins/disable-json-api/)
+        * [Safe SVG](https://wordpress.org/plugins/safe-svg/)
+        * [SameSite](https://wordpress.org/plugins/samesite/)
+        * [Clean Image Filenames](https://wordpress.org/plugins/clean-image-filenames/)
+        * [All-in-One WP Migration](https://wordpress.org/plugins/all-in-one-wp-migration/)
         * Login No Captcha reCAPTCHA
-        * [https://wordpress.org/plugins/all-in-one-wp-migration/](All-in-One WP Migration)
+        * Migration 
+            * [All-in-One WP Migration](https://wordpress.org/plugins/all-in-one-wp-migration/) + All-in-One WP Migration Unlimited Extension
+            * [Better Search Replace](https://wordpress.org/plugins/better-search-replace/)
+            * [WP File Manager](https://wordpress.org/plugins/wp-file-manager/)
+
+
+
 
 
 8. **Ideal Deployment Cycle:**
