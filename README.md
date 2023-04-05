@@ -18,7 +18,8 @@
     * Dosyalar 644	
     * .htaccess , wp-config.php 640
     * Dosya sahibi : www-data veya non-root user
-    * **Bash Script : **
+    * **Linux Bash Script:**
+
 
 
     ~~~
@@ -44,7 +45,8 @@
         * /xmlrpc.php
         * /wp-comments-sample.php
     * Remove wp version from source
-5. **Development** dosyalarının silinmesi
+
+5. **Development dosyalarının silinmesi**
     *  **Site root dizinde:**
         * test.php, info.php vb özellikle phpinfo gösteren dosya ve benzerleri **production **da  silinmeli.
         * **FTP programları** config dökümanları ( .ftpconfig .sitesettnigs .vb ) Kök dizinde olmamalı.
@@ -73,6 +75,10 @@
         define('DISALLOW_FILE_EDIT', true);
         // define('WP_DISABLE_FATAL_ERROR_HANDLER',true);
     ```
+    * Tema veya plugin geliştirirken dosyaların Wordpress dışında çalıştırılmasını engelle.
+        *  ~~~~
+                <?php defined('ABSPATH') or die(); ?>
+            ~~~
 
 
 6. **Database**
