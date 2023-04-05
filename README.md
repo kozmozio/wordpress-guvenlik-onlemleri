@@ -59,13 +59,13 @@
 
 
     ```
-        ini_set('display_startup_errors', 1);
-        ini_set('display_errors', 1);
+        ini_set('display_startup_errors', 0);
+        ini_set('display_errors', 0);
         $today =  date('y-m-d');
         error_reporting(E_ALL);
         define( 'WP_DEBUG', true );
         define( 'WP_DEBUG_DISPLAY', false  );
-        define( 'WP_DEBUG_LOG', 'log_path/debug-'.$today.'.log' );
+        define( 'WP_DEBUG_LOG', 'logs/debug-'.$today.'.log' );
         // do not save post revisions
         define('WP_POST_REVISIONS', false);
         // Do not update WP core automaticaly
@@ -112,13 +112,13 @@
     * Wordpress ve Pluginler panel üzerinden güncellenir
     * **Aktif theme development** yapılıyor ise ; 
         * Geliştirmesi yapılan temalar bu kategoride. 
-        * Sadece **/wp-content/themes/tema_adi/ **içerisinde güncelleme olur.**
+        * Sadece **./wp-content/themes/tema_adi/ **içerisinde güncelleme olur.**
         * **Local development** ortamı kurulur, geliştirmeler burada yapılır
-        * **Staging domain** var ise, lokal geliştirmeler buraya remote FTP ile push edilir
+        * **Staging domain** var ise, lokal geliştirmeler buraya remote FTP veya github üzerinden push edilir
         * Staging domain, **Production’a** aktarılır
         * Sadece Production Domain ise;
             * Dosya ve Veritabanı Yedekleri alınır.
-            * Localde test edilen scriptler Production ‘a remote FTP aracıyla yüklenir.
+            * Localde test edilen scriptler Production ‘a remote FTP veya github aracıyla yüklenir.
     * **Aktif development yok ise:**
         * Satın alınmış temalar bu kategoride. 
         * Sadece production domain ve panel üzerinden güncellemeler yapılır.
