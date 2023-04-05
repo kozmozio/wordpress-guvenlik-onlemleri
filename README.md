@@ -75,10 +75,11 @@
         define('DISALLOW_FILE_EDIT', true);
         // define('WP_DISABLE_FATAL_ERROR_HANDLER',true);
     ```
-    * Tema veya plugin geliştirirken dosyaların Wordpress dışında çalıştırılmasını engelle.
+    * Tema veya plugin dosyalarının Wordpress dışında çalıştırılmasını engelle.
+    Bu scripti dosyaların başına ekleyebilirsin.
         *  ~~~~
                 <?php defined('ABSPATH') or die(); ?>
-            ~~~
+        
 
 
 6. **Database**
@@ -89,9 +90,16 @@
 7. **Pluginler**
     * İnaktif pluginler silinmeli
     * Tüm pluginler son sürümünde olmalı
-    * Wp All In One Security tavsiye ediliyor.
-    * Disable REST API tavsiye ediliyor
-    * Safe SVG tavsiye ediliyor 
+    * Wordpress.org tan indirilmiş veya lisans ile geliştirici sitesinden indirilmiş olmalı.
+    * **Tavsiye edilen pluginler**
+        * Wp All In One Security 
+        * Disable REST API 
+        * Safe SVG 
+        * SameSite
+        * Clean Image Filenames
+        * Login No Captcha reCAPTCHA
+        * [https://wordpress.org/plugins/all-in-one-wp-migration/](All-in-One WP Migration)
+
 
 8. **Ideal Deployment Cycle:**
     * Wordpress ve Pluginler panel üzerinden güncellenir
