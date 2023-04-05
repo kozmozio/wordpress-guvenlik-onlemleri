@@ -10,21 +10,22 @@ Tarih : 04.04.2023</p>
 
 
 1. **Sürümler : **Deprecated sürümler kullanılmamalı
-    1. Wordpress son sürümünde mi?
-    2. PHP Güncel sürümünde mi?
-    3. Tüm pluginler son sürümünde mi?
-    4. Veritabanı altyapısı güncel sürümünde mi?
+        1. Wordpress son sürümünde mi?
+        2. PHP Güncel sürümünde mi?
+        3. Tüm pluginler son sürümünde mi?
+        4. Veritabanı altyapısı güncel sürümünde mi?
 2. **Domain **
-    5. Domain SSL sertifikası var mı?
-    6. Non SSL versiton SSL'e yönleniyor mu?
-    7. www versiyon yönleniyor mu? \
+        5. Domain SSL sertifikası var mı?
+        6. Non SSL versiton SSL'e yönleniyor mu?
+        7. www versiyon yönleniyor mu? \
 
 3. **Dosyalar ve Dizin** **Yetkileri**
-    8. Klasörler 755
-    9. Dosyalar 644	
-    10. .htaccess , wp-config.php 640
-    11. Dosya sahibi : www-data veya non-root user
-    12. **Bash Script : **
+        8. Klasörler 755
+        9. Dosyalar 644	
+        10. .htaccess , wp-config.php 640
+        11. Dosya sahibi : www-data veya non-root user
+        12. **Bash Script : **
+
 
     ```
        chown www-data:www-data  -R * # Let Apache be owner
