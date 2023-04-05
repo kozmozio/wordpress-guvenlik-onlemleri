@@ -29,7 +29,6 @@
 
 
 ![filemods](assets/filemods.png "File mods and owners")
-![alt text](https://github.com/kozmozio/wordpress-guvenlik-onlemleri/blob/main/assets/filemods.png?raw=true)
 
 
 
@@ -54,7 +53,8 @@
         * wp-config.php 
         * SALT key ler güncellenmeli. [https://api.wordpress.org/secret-key/1.1/salt/](https://api.wordpress.org/secret-key/1.1/salt/)
         * Loglama aktif ve görünmez olmalı
-        * **wp-config.php ye ekle : **
+        * **wp-config.php ye ekle**
+
 
     ```
         ini_set('display_startup_errors', 1);
@@ -85,19 +85,19 @@
     * Tüm pluginler son sürümünde olmalı
     * Wp All In One Security tavsiye ediliyor.
     * Disable REST API tavsiye ediliyor
-    * Safe SVG tavsiye ediliyor \
+    * Safe SVG tavsiye ediliyor 
 
 8. **Ideal Deployment Cycle:**
     * Wordpress ve Pluginler panel üzerinden güncellenir
     * **Aktif theme development** yapılıyor ise ; 
         * Geliştirmesi yapılan temalar bu kategoride. 
-        * Sadece **/wp-content/themes/tema_adi/ **içerisinde güncelleme olur.** **
+        * Sadece **/wp-content/themes/tema_adi/ **içerisinde güncelleme olur.**
         * **Local development** ortamı kurulur, geliştirmeler burada yapılır
         * **Staging domain** var ise, lokal geliştirmeler buraya remote FTP ile push edilir
         * Staging domain, **Production’a** aktarılır
         * Sadece Production Domain ise;
             * Dosya ve Veritabanı Yedekleri alınır.
             * Localde test edilen scriptler Production ‘a remote FTP aracıyla yüklenir.
-    * **Aktif development yok ise : **
+    * **Aktif development yok ise:**
         * Satın alınmış temalar bu kategoride. 
         * Sadece production domain ve panel üzerinden güncellemeler yapılır.
