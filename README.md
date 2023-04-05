@@ -63,7 +63,7 @@
         error_reporting(E_ALL);
         define( 'WP_DEBUG', true );
         define( 'WP_DEBUG_DISPLAY', false  );
-        define( 'WP_DEBUG_LOG', 'wp-content/uploads/logs/debug-'.$today.'.log' );
+        define( 'WP_DEBUG_LOG', 'log_path/debug-'.$today.'.log' );
         // do not save post revisions
         define('WP_POST_REVISIONS', false);
         // Do not update WP core automaticaly
